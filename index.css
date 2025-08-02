@@ -22,11 +22,13 @@
 body {
   font-family: var(--font-Barlow);
   margin: 2rem;
-  background-color: var(--color-Grey-200);
+  background-color: var(--color-Grey-100);
+  height: 100vh;
 }
 .card-container {
   display: grid;
   gap: 2rem;
+  margin: 5rem;
 }
 
 .card-purple {
@@ -34,36 +36,36 @@ body {
   border-radius: 0.5rem;
   color: var(--color-White);
   padding: 2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .card-grey {
   background-color: var(--color-Grey-500);
   border-radius: 0.5rem;
   color: var(--color-White);
   padding: 2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .card-white {
   background-color: var(--color-White);
   border-radius: 0.5rem;
   color: var(--color-Black);
   padding: 2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .card-white2 {
   background-color: var(--color-White);
   border-radius: 0.5rem;
   color: var(--color-Black);
   padding: 2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
-.card-black {
-  background-color: var(--color-White);
-  border-radius: 0.5rem;
-  color: var(--color-Black);
-  padding: 2rem;
-}
+
 .card-black {
   background-color: var(--color-Black);
   border-radius: 0.5rem;
   color: var(--color-White);
   padding: 2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .card-profile {
   display: flex;
@@ -98,12 +100,13 @@ body {
 
 @media (min-width: 48rem) {
   body {
-    margin: 5rem;
+    height: 100vh;
   }
   .card-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: 2rem;
+    background-color: aqua;
   }
 
   .card-purple {
