@@ -1,0 +1,122 @@
+:root {
+  /* fonts */
+  --font-Barlow: "Barlow Semi Condensed", sans-serif;
+
+  /* colors */
+  --color-Purple-50: hsl(260, 100%, 95%);
+  --color-Purple-300: hsl(264, 82%, 80%);
+  --color-Purple-500: hsl(263, 55%, 52%);
+  --color-White: hsl(0, 0%, 100%);
+  --color-Grey-100: hsl(214, 17%, 92%);
+  --color-Grey-200: hsl(0, 0%, 81%);
+  --color-Grey-400: hsl(224, 10%, 45%);
+  --color-Grey-500: hsl(217, 19%, 35%);
+  --color-Dark-blue: hsl(219, 29%, 14%);
+  --color-Black: hsl(0, 0%, 7%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-Barlow);
+  margin: 2rem;
+  background-color: var(--color-Grey-200);
+}
+.card-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.card-purple {
+  background-color: var(--color-Purple-500);
+  border-radius: 0.5rem;
+  color: var(--color-White);
+  padding: 2rem;
+}
+.card-grey {
+  background-color: var(--color-Grey-500);
+  border-radius: 0.5rem;
+  color: var(--color-White);
+  padding: 2rem;
+}
+.card-white {
+  background-color: var(--color-White);
+  border-radius: 0.5rem;
+  color: var(--color-Black);
+  padding: 2rem;
+}
+.card-white2 {
+  background-color: var(--color-White);
+  border-radius: 0.5rem;
+  color: var(--color-Black);
+  padding: 2rem;
+}
+.card-black {
+  background-color: var(--color-White);
+  border-radius: 0.5rem;
+  color: var(--color-Black);
+  padding: 2rem;
+}
+.card-black {
+  background-color: var(--color-Black);
+  border-radius: 0.5rem;
+  color: var(--color-White);
+  padding: 2rem;
+}
+.card-profile {
+  display: flex;
+}
+.card-profile img {
+  border-radius: 2rem;
+  border: 0.12rem solid var(--color-Grey-400);
+  width: 2.7rem;
+  height: 2.7rem;
+  margin-right: 1rem;
+}
+.card-profile-name {
+  font-weight: 500;
+  font-size: 1.19rem;
+}
+.card-profile-title {
+  font-weight: 600;
+  font-size: 1.49rem;
+  margin: 1rem 0rem;
+}
+.card-profile-subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-Grey-200);
+}
+
+.card-profile-subtitle-white {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-Grey-500);
+}
+
+@media (min-width: 48rem) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+  }
+
+  .card-purple {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .card-white2 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .card-black {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .card-profile-subtitle {
+    font-size: clamp(1rem, 5vw + 1rem, 1.05rem);
+  }
+}
