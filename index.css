@@ -97,6 +97,9 @@ body {
 }
 
 @media (min-width: 48rem) {
+  body {
+    margin: 5rem;
+  }
   .card-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
